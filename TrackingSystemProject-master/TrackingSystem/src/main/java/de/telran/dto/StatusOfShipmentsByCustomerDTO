@@ -1,0 +1,13 @@
+package de.telran.dto;
+
+import de.telran.entity.Status;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class StatusOfShipmentsByCustomerDTO {
+    private String name;
+    private String title;
+    private Status status;
+}

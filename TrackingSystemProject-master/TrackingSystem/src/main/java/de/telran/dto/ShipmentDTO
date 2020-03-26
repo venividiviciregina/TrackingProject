@@ -1,0 +1,16 @@
+package de.telran.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import org.springframework.lang.Nullable;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+public class ShipmentDTO {
+    @Nullable
+    Long shipmentId;
+    String title;
+    List<TrackingDTO> tracking;
+}

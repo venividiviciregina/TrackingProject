@@ -1,0 +1,16 @@
+package de.telran.dto;
+
+import de.telran.entity.Status;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import org.springframework.lang.Nullable;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+public class TrackingDTO {
+    @Nullable
+    Long trackingId;
+    Status status;
+}
